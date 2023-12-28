@@ -1,4 +1,5 @@
 <template>
+  <div class="fon">
     <div class="login-container">
       <h2 style="text-align: center;">Авторизация</h2>
       <form>
@@ -13,6 +14,7 @@
         <button class="log" @click="login">Войти</button>
       </form>
     </div>
+  </div>
   </template>
   
   <script>
@@ -32,6 +34,17 @@ export default {
 </script>
   
   <style>
+  .fon{
+    background: linear-gradient(to bottom, #E667AF, #333);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 7%;
+    left: 0;
+    width: 100%;
+    height: 90%;
+  }
   .login-container {
     max-width: 400px;
     margin: 5% auto;

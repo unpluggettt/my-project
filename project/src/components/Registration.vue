@@ -1,14 +1,11 @@
 <template>
+  <div class="fon">
     <div class="registration-container">
       <h2 style="text-align: center;">Регистрация</h2>
       <form @submit="register">
         <div class="form-group">
           <label for="firstName">Имя:</label>
           <input type="text" id="firstName" v-model="firstName" required>
-        </div>
-        <div class="form-group">
-          <label for="lastName">Фамилия:</label>
-          <input type="text" id="lastName" v-model="lastName" required>
         </div>
         <div class="form-group">
           <label for="email">Почта:</label>
@@ -32,6 +29,7 @@
         <button class="reg" @click="registration">Зарегистрироваться</button>
       </form>
     </div>
+  </div>
   </template>
   
   <script>
@@ -39,7 +37,6 @@
     data() {
       return {
         firstName: '',
-        lastName: '',
         email: '',
         phone: '',
         password: '',
@@ -66,7 +63,7 @@
   <style>
   .registration-container {
     max-width: 400px;
-    margin: 6% auto;
+    margin: 3% auto;
   }
   
   .form-group {
