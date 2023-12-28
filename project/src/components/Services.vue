@@ -42,7 +42,7 @@ export default {
         },
         {
           src: require('@/assets/image7.jpg'),
-          caption: 'Ведение групп в социальных сетя'
+          caption: 'Ведение групп в социальных сетях'
         },
         {
           src: require('@/assets/image8.jpg'),
@@ -119,4 +119,5 @@ export default {
   color: white;
   font-weight: bold;
 }
+
 </style>

@@ -22,7 +22,7 @@
                 </div>
                 <div class="chek">
                     <span class="checkmark"><span class="first-word1">✓ &nbsp;</span> 
-                    <span class="last-word1">Вызываем симпатию у <br> потенциальных <br> клиентов</span></span>
+                    <span class="last-word1">Вызываем симпатию у <br> потенциальных клиентов</span></span>
                 </div>
                 <div class="chek">
                     <span class="checkmark"><span class="first-word1">✓ &nbsp;</span> 
