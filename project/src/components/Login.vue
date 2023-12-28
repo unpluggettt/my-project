@@ -36,14 +36,13 @@ export default {
   <style>
   .fon{
     background: linear-gradient(to bottom, #E667AF, #333);
-    display: flex;
     justify-content: center;
     align-items: center;
     position: absolute;
     top: 7%;
     left: 0;
     width: 100%;
-    height: 90%;
+    height: 88%;
   }
   .login-container {
     max-width: 400px;

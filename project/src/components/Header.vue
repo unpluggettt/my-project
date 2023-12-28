@@ -22,7 +22,7 @@
     justify-content: space-between;
     align-items: center;
     background-color: #E667AF;
-    height: 50px;
+    height: 7%;
     width: 100%;
     padding: 10px;
     position: fixed; 

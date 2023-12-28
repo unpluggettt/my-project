@@ -100,11 +100,10 @@
     justify-content: flex-start; 
     align-items: stretch;
   }
-
   .first-word1{
     font-size: 30px;
     color: #E667AF;
-}
+  }
   .last-word1{
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     font-size: 18px;
