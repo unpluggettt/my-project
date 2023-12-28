@@ -1,54 +1,50 @@
 <template>
-    <div>
+    <div class="vue-carousel-container">
       <h1>SMM услуги</h1>
-      <div class="carousel">
-        <carousel-item v-for="item in carouselItems" :key="item.id" :item="item"></carousel-item>
-      </div>
+      <vue-carousel>
+        <slide class="vue-carousel-slide">
+          <img src="@/assets/image1.jpg" alt="Картинка 1">
+          <div class="caption">Продвижение в Instagarm</div>
+        </slide>
+        <slide class="vue-carousel-slide">
+          <img src="@/assets/image2.jpeg" alt="Картинка 2">
+          <div class="caption">Продвижение в TikTok</div>
+        </slide>
+        <slide class="vue-carousel-slide">
+          <img src="@/assets/image3.jpg" alt="Картинка 3">
+          <div class="caption">Продвижение во "Вконтакте</div>
+        </slide>
+        <slide class="vue-carousel-slide">
+          <img src="@/assets/image4.jpg" alt="Картинка 4">
+          <div class="caption">Разработка SMM-стратегии</div>
+        </slide>
+        <slide class="vue-carousel-slide">
+          <img src="@/assets/image5.png" alt="Картинка 5">
+          <div class="caption">Оформление социальных сетей</div>
+        </slide>
+        <slide class="vue-carousel-slide">
+          <img src="@/assets/image6.jpg" alt="Картинка 6">
+          <div class="caption">Таргетированная реклама</div>
+        </slide>
+        <slide class="vue-carousel-slide">
+          <img src="@/assets/image7.jpg" alt="Картинка 7">
+          <div class="caption">Ведение групп в социальных сетях</div>
+        </slide>
+        <slide class="vue-carousel-slide">
+          <img src="@/assets/image8.jpg" alt="Картинка 8">
+          <div class="caption">Фото/видео продакшн</div>
+        </slide>
+      </vue-carousel>
     </div>
   </template>
   
   <script>
-  import CarouselItem from '@/components/CarouselItem.vue';
-  
-  export default {
-    components: {
-      CarouselItem
-    },
-    data() {
-      return {
-        carouselItems: [
-          { id: 1, image: require('@/assets/image1.jpg'), caption: 'Продвижение в Instagarm' },
-          { id: 2, image: require('@/assets/image2.jpg'), caption: 'Продвижение в TikTok' },
-          { id: 3, image: require('@/assets/image3.jpg'), caption: 'Продвижение во "Вконтакте"' },
-          { id: 4, image: require('@/assets/image4.jpg'), caption: 'Разработка SMM-стратегии' },
-          { id: 5, image: require('@/assets/image5.jpg'), caption: 'Оформление социальных сетей' },
-          { id: 6, image: require('@/assets/image6.jpg'), caption: 'Таргетированная реклама' },
-          { id: 7, image: require('@/assets/image7.jpg'), caption: 'Ведение групп в социальных сетях' },
-          { id: 8, image: require('@/assets/image8.jpg'), caption: 'Фото/видео продакшн' },
-        ]
-      };
-    }
-  };
-  </script>
-  
-  <style scoped>
-  .carousel {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-wrap: wrap;
-  }
-  
-  .carousel-item {
-    width: 200px;
-    height: 200px;
-    margin: 10px;
-    text-align: center;
-  }
-  
-  .carousel-item img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-  }
-  </style>
+    import VueCarousel, {slide } from 'vue-carousel';
+
+        export default {
+        components: {
+            VueCarousel,
+            slide
+        }
+    };
+</script>

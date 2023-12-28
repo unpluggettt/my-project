@@ -9,11 +9,13 @@
 <script>
 import Header from '@/components/Header.vue'
 import Footer from '@/components/Footer.vue'
+import Services from './components/Services.vue';
 
 export default {
   components: {
     Header,
-    Footer
+    Footer,
+    Services
   }
 }
 </script>
